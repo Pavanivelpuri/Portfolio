@@ -1,0 +1,10 @@
+node_modules/ 
+build/ 
+*.log 
+*.lock 
+.env 
+.idea/ 
+.vscode/ 
+.DS_Store 
+*.tmp 
+*.swp 

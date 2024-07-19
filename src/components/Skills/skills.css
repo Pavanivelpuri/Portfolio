@@ -1,0 +1,210 @@
+/*#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.skillDesc {
+    font-weight: 250;
+    font-size: 1.2rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+    margin-bottom: 0.3rem;
+    font-family: sans-serif;
+}
+
+.skillBars {
+    margin: 1rem;
+    width: 60vw;
+    max-width: 100%;
+    text-align: left;
+}
+
+.skillBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.skillBarImg {
+    object-fit: cover;
+    margin-right: 2rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.skillBarText {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillBarText > h2 {
+    font-size: 0.5rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+.skillBarText > p {
+    font-size: 0.5rem;
+    font-weight: 80;
+    font-style: italic;
+}
+
+.skillBarContent {
+    height: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+}
+*/
+/* General Styles */
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillPara {
+    font-weight: 400;
+    font-size: 1.3rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.skillbars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.skillbar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.skillbarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.skillbartext {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+/* Media Queries */
+@media screen and (max-width: 720px) {
+    .skillbartext p {
+        font-size: 2vw;
+    }
+    .skillbarImg {
+        height: 2.25rem;
+        width: 2.5rem;
+    }
+    .skillbartext h2 {
+        font-size: 5vw;
+    }
+    .experienceImg {
+        width: 70px; /* Adjust size for smaller screens */
+        height: 70px;
+    }
+    .experienceImg .btn-text {
+        font-size: 0.6rem; /* Adjust button text size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skillbartext p {
+        font-size: 2vw;
+    }
+    .skillbarImg {
+        height: 2.25rem;
+        width: 2.5rem;
+    }
+    .skillbartext h2 {
+        font-size: 5vw;
+    }
+}
+
+/* Experience Section */
+#Experience {
+    margin-top: 0.5rem; /* Adjust margin top as needed */
+    text-align: center; /* Center align the content */
+}
+
+.experiencepagetitle {
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.experienceImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust the gap between images */
+    margin-top: 1rem; /* Adjust margin top as needed */
+}
+
+.experienceImg {
+    width: 100px; /* Set width and height to maintain consistent size */
+    height: 100px;
+    margin: 0.5rem; /* Adjust margin around each image */
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Ensure contents stay within the circular boundary */
+    position: relative; /* Enable positioning of the button */
+}
+
+.experienceImg img {
+    width: 100%; /* Ensure the image takes full space within the circle */
+    height: auto;
+}
+
+.experienceImg .btn-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Background color for the button */
+    color: white; /* Text color */
+    padding: 0.5rem; /* Padding for the button */
+    box-sizing: border-box;
+    text-align: center; /* Center align text */
+    font-size: 0.8rem; /* Adjust font size as needed */
+}
+
